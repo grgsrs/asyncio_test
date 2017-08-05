@@ -1,0 +1,8 @@
+message GetBalance {
+    required string customer_id = 1;
+}
+
+message Response {
+    required string customer_id = 1;
+    required float balance = 2;
+}

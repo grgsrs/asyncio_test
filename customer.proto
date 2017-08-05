@@ -1,0 +1,15 @@
+enum RequestType {
+    DEPOSIT = 1;
+    WITHDRAW = 2;
+};
+
+message Request {
+    required string customer_id = 1;
+    required RequestType request_type = 2;
+    required float amount = 3;
+}
+
+message Reply {
+    required bool success = 1;
+    required float balance = 2;
+}
